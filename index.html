@@ -13,16 +13,38 @@
         h1, h2, h3 {
             margin-top: 20px;
         }
+        h1::after, h2::after, h3::after {
+            content: "";
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #000;
+            margin-top: 5px;
+        }
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
-    <h1>Ya-Chen Hsieh (Grace)</h1>
-    <p><strong>Address:</strong> 151, University Rd., San Shia District, New Taipei City, 23741 Taiwan</p>
-    <p><strong>Email:</strong> <a href="mailto:s711236114@gm.ntpu.edu.tw">s711236114@gm.ntpu.edu.tw</a></p>
+    <div class="profile">
+        <img src="https://i.imgur.com/eFGs0nI.jpg" alt="Profile Picture">
+        <div>
+            <h1>Ya-Chen Hsieh (Grace)</h1>
+            <p><strong>Address:</strong> 151, University Rd., San Shia District, New Taipei City, 23741 Taiwan</p>
+            <p><strong>Email:</strong> <a href="mailto:s711236114@gm.ntpu.edu.tw">s711236114@gm.ntpu.edu.tw</a></p>
+        </div>
+    </div>
 
     <h2>EDUCATION</h2>
     <p><strong>National Taipei University, Taiwan, R.O.C.</strong> <br>
@@ -69,4 +91,3 @@
     </ul>
 </body>
 </html>
-
